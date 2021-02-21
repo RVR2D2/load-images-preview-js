@@ -32,7 +32,7 @@ upload('#file', {
               console.log(error);
           }, () => {
               task.snapshot.ref.getDownloadURL().then(url => {
-                  console.log('Download URL:', url);
+                   document.write('Download URL:', `<a href="${url}">Посмотреть полное изображение</a>`);
               });
           });
         });
